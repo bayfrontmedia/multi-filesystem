@@ -1,0 +1,39 @@
+{
+  "name": "bayfrontmedia/multi-filesystem",
+  "description": "An easy-to-use library used to manage multiple Flysystem adapters from a single class.",
+  "homepage": "https://github.com/bayfrontmedia/multi-filesystem",
+  "license" : "MIT",
+  "type": "library",
+  "keywords": [
+    "php",
+    "filesystem",
+    "disk",
+    "storage"
+  ],
+  "authors": [
+    {
+      "name": "John Robinson",
+      "email": "john@bayfrontmedia.com",
+      "homepage": "https://www.bayfrontmedia.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/bayfrontmedia/multi-filesystem/issues"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist"
+  },
+  "require": {
+    "php": "^8.0",
+    "league/flysystem": "^3.15"
+  },
+  "require-dev": {
+    "league/flysystem-aws-s3-v3": "^3.15"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bayfront\\MultiFilesystem\\": "src/"
+    }
+  }
+}
